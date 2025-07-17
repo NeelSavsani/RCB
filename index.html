@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCBZone</title>
+    <link rel="shortcut icon" href="assets/fv/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e05d24f6c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/scoreboard.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/rcb_logo.png" alt="Logo">
+                RCBZone
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Team</a>
+                <a href="#">IPL2025</a>
+                <div class="icons">
+                    <a href="#" onclick="toggleTheme(event)" title="Toggle Theme"><i class="fa-solid fa-sun"></i></a>
+                    <a href="https://www.facebook.com/RoyalChallengersBangalore/" target="_blank" title="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/royalchallengers.bengaluru" target="_blank" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/rcbtweets?lang=en" target="_blank" title="Twitter"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCCq1xDJMBRF61kiOgU90_kw" target="_blank"
+                        title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.interactech.rcb&hl=en_IN" target="_blank"
+                        title="PlayStore"><i class="fa-brands fa-google-play"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="group1">
+                <a href="#" class="active">Home</a>
+                <a href="#">Team</a>
+                <a href="#">IPL2025</a>
+            </div>
+            <div class="group2">
+                <a href="#" onclick="toggleTheme(event)" title="Toggle Theme"><i class="fa-solid fa-sun"></i></a>
+                <a href="https://www.facebook.com/RoyalChallengersBangalore/" target="_blank" title="Facebook"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/royalchallengers.bengaluru" target="_blank" title="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/rcbtweets?lang=en" target="_blank" title="Twitter"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCCq1xDJMBRF61kiOgU90_kw" target="_blank" title="YouTube"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.interactech.rcb&hl=en_IN" target="_blank"
+                    title="PlayStore"><i class="fa-brands fa-google-play"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==========HERO============ -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>EE SALA CUP NAMDE</h1>
+                <p>The wait is over. The triumph is here. Relive the glorious moment Royal Challengers Bengaluru lifted
+                    the IPL 2025 Trophy.</p>
+                <button onclick="reliveVictory()">Relive the Victory <span>→</span></button>
+            </div>
+        </section>
+
+
+
+        <!-- =======SCOREBOARD========== -->
+        <section class="scoreboard">
+            <div class="teams">
+                <div class="team">
+                    <img src="assets/Punjab_Kings_Logo.svg" alt="Punjab Kings" />
+                    <h4 class="desktop-view">Punjab Kings</h4>
+                    <h4 class="mobile-view">Punjab<br>Kings</h4>
+                </div>
+
+                <div class="scores">
+                    <div class="team-score">
+                        <span class="runs">184/7</span>
+                        <span class="overs">20</span>
+                        <span class="rate">Run Rate: 9.2</span>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="team-score">
+                        <span class="runs">190/9</span>
+                        <span class="overs">20</span>
+                        <span class="rate">Run Rate: 9.5</span>
+                    </div>
+                </div>
+
+                <div class="team">
+                    <img src="assets/Royal_Challengers_Bengaluru_Logo.svg" alt="Royal Challengers Bengaluru" />
+                    <h4 class="desktop-view">Royal Challengers<br>Bengaluru</h4>
+                    <h4 class="mobile-view">Royal<br>Challengers<br>Bengaluru</h4>
+                </div>
+            </div>
+
+            <div class="result">
+                Royal Challengers Bengaluru Won by 6 Runs <strong>(Winners)</strong>
+            </div>
+
+            <div class="balls-container">
+                <div class="balls-section">
+                    <span class="over-title over20">OVER20</span>
+                    <span class="ball six">6</span>
+                    <span class="ball six">6</span>
+                    <span class="ball four">4</span>
+                    <span class="ball six">6</span>
+                    <span class="ball">0</span>
+                    <span class="ball">0</span>
+                </div>
+                <div class="balls-section">
+                    <span class="over-title over19">OVER19</span>
+                    <span class="ball">1</span>
+                    <span class="ball">2</span>
+                    <span class="ball four">4</span>
+                    <span class="ball">0</span>
+                    <span class="ball">0</span>
+                    <span class="ball six">6</span>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis sapiente esse libero eos corporis quia
+        impedit nesciunt, harum fugiat labore placeat! Laudantium molestiae possimus tempora quae ea sapiente soluta
+        quisquam?
+        Harum nostrum, incidunt quod voluptatem sint asperiores dolor voluptate eaque adipisci porro distinctio officia
+        iure maxime autem aspernatur dolorum repellat necessitatibus eveniet id praesentium soluta suscipit? Sequi
+        repudiandae perspiciatis voluptas?
+        Aspernatur ea facere provident explicabo. Dicta commodi neque nobis temporibus nesciunt explicabo praesentium
+        voluptate, laboriosam amet. Odio officiis dolores, incidunt magnam consectetur quia voluptatum! Enim sapiente
+        deserunt qui tempora quam.
+        Harum, optio impedit, cumque eveniet rerum consectetur accusantium molestias iure quam architecto aut porro
+        nesciunt quae voluptates cum itaque culpa. Voluptatum, animi dolor exercitationem enim nisi labore? Ex, quo
+        facilis.
+        Recusandae dignissimos molestiae consequuntur tenetur commodi in eum, voluptate veniam facere praesentium ipsa
+        fugiat doloremque, corporis, odio sit consectetur nemo nam saepe laboriosam tempore ea modi exercitationem! Cum,
+        magnam enim.
+        Maiores, aperiam! Optio deleniti commodi neque a ipsum inventore consequuntur, excepturi beatae porro fugit ea
+        adipisci sint in et accusantium facere ad iure ipsam possimus quas saepe eveniet. Aspernatur, necessitatibus?
+        Quis hic voluptatibus placeat inventore ad sint dolor dolores, repellat non voluptas. Obcaecati, laudantium
+        pariatur architecto, quasi rem reiciendis hic voluptatum iusto provident deserunt ducimus at iste corrupti esse
+        unde.
+        Sit veniam aliquid minus quis ad magni? Maiores iure itaque rem dolorem quas laborum facilis consectetur beatae
+        odio voluptate sint, animi maxime. Ullam dolore officia voluptatem corrupti? Delectus, nisi at!
+        Quae vitae, dolorum delectus reiciendis libero explicabo error, assumenda quos ea, sint quaerat consequatur est
+        officiis nisi earum? Ipsam dolorem ullam magni perferendis quas! Consequuntur architecto soluta perferendis
+        repudiandae reiciendis.
+        Iure repudiandae quae libero quisquam corrupti sapiente architecto impedit tenetur, laboriosam veritatis
+        molestias natus enim? Saepe obcaecati veritatis necessitatibus sit dolorum, qui earum eveniet iure, ipsam modi
+        id. Vero, quisquam.
+        Voluptates ipsa aliquid, sit repudiandae eum vel fugit praesentium cupiditate totam animi. Facilis tenetur
+        labore animi corrupti accusamus distinctio quisquam expedita eveniet. Officiis excepturi possimus mollitia
+        exercitationem non ipsa sed!
+        Nihil alias, suscipit optio veniam amet, debitis et eveniet aspernatur repellendus dolore ipsam! Est molestiae,
+        beatae temporibus sequi, saepe expedita corrupti, accusamus optio debitis asperiores harum deleniti error
+        consequuntur consequatur!
+    </main>
+
+    <footer class="footer">
+        <hr />
+        <p>© <a href="https://neelsavsani.vercel.app" target="_blank">MasterEagle.</a> All rights reserved. Built with
+            <i class="fas fa-heart"></i>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

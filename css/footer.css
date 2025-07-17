@@ -1,0 +1,45 @@
+:root {
+    --bg-dark: #07080A;
+    --bg2-dark: #1d1f23;
+    --bg-light: #ffffff;
+    --text-dark: #ffffff;
+    --text-light: #000000;
+    --active: #be9440;
+    --actived: #159946;
+    --hover-bg: #222;
+    --group2-hover-bg: #222;
+    --red-bg: #ca0d13;
+    --red-dark: #aa0f10;
+    --red-light: #d60c14;
+}
+
+.footer {
+    background: linear-gradient(to bottom, var(--red-light), var(--red-bg), var(--red-dark));
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+a{
+    font-size: 18px;
+    color: var(--active);
+}
+
+.fa-heart:hover {
+    color: var(--active);
+    cursor: pointer;
+}
+
+.footer hr {
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 0.8rem;
+        padding: 15px 5px;
+    }
+}

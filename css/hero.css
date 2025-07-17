@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+    --bg-dark: #07080A;
+    --bg2-dark: #1d1f23;
+    --bg-light: #ffffff;
+    --text-dark: #ffffff;
+    --text-light: #000000;
+    --active: #be9440;
+    --actived: #159946;
+    --hover-bg: #222;
+    --group2-hover-bg: #222;
+    --red-bg: #ca0d13;
+    --red-dark: #aa0f10;
+    --red-light: #d60c14;
+}
+
+.hero {
+    background: url('../assets/hero.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    min-height: 100svh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 900px;
+    padding: 20px;
+    color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.hero-content button {
+    background: var(--red-bg);
+    color: white;
+    padding: 14px 26px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content button:hover {
+    background: var(--red-dark);
+    transform: scale(1.05);
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .hero {
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content button {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-content button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

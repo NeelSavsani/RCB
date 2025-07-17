@@ -15,10 +15,6 @@ function toggleMenu() {
     }
 }
 
-function toggleTheme(event) {
-    event.preventDefault();
-    document.body.classList.toggle('dark-mode');
-}
 
 document.addEventListener('click', function (event) {
     const isClickInsideMenu = menu.contains(event.target);

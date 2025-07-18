@@ -28,3 +28,32 @@ document.addEventListener('click', function (event) {
         toggleIcon.classList.add('fa-bars');
     }
 });
+
+function knowChampions() {
+    window.open('#', '_blank');
+}
+
+function reliveVictory() {
+    window.open('', '_blank');
+}
+
+function visitPortfolio(){
+    window.open('https://neelsavsani.vercel.app', '_blank');
+}
+
+let lastScrollTop = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        header.style.top = "-100px"; // hide header
+    } else {
+        // Scrolling up
+        header.style.top = "0"; // show header
+    }
+
+    lastScrollTop = currentScroll;
+});

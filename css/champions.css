@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --bg-dark: #07080A;
+    --bg2-dark: #1d1f23;
+    --bg-light: #ffffff;
+    --text-dark: #ffffff;
+    --text-light: #000000;
+    --active: #be9440;
+    --actived: #159946;
+    --hover-bg: #222;
+    --group2-hover-bg: #222;
+    --red-bg: #ca0d13;
+    --red-dark: #aa0f10;
+    --red-light: #d60c14;
+    --pink-bg: #F8E5E3;
+    --disc-color: #647499;
+}
+
+.champions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 30px 0;
+    margin: 50px auto;
+    width: 60%;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.user-logo{
+    margin-top: 20px;
+    font-size: 38px;
+    padding: 1.5rem 1.4rem;
+    background: var(--pink-bg);
+    color: var(--red-light);
+    border-radius: 50%;
+}
+
+.trophy-logo{
+  margin-top: 20px;
+  font-size: 38px;
+  padding: 1.4rem 1.5rem;
+  background: var(--active);
+  /* color: var(--active); */
+  color: #fee871;
+  border-radius: 50%;
+}
+
+.heading{
+    margin: 20px 0;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    color: var(--red-light);
+}
+
+.disc{
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--disc-color);
+    font-size: 19px;
+}
+
+@media (max-width: 1024px) {
+  .champions {
+    width: 80%;
+    padding: 24px 16px;
+  }
+
+  .user-logo {
+    font-size: 32px;
+    padding: 1.2rem;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .disc {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .champions {
+    width: 90%;
+    padding: 20px 14px;
+  }
+
+  .user-logo {
+    font-size: 28px;
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  .disc {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .champions {
+    width: 95%;
+    padding: 16px 12px;
+  }
+
+  .user-logo {
+    font-size: 24px;
+    padding: 0.8rem;
+  }
+
+  .heading {
+    font-size: 20px;
+    margin: 14px 0;
+  }
+
+  .disc {
+    font-size: 15px;
+    text-align: center;
+  }
+}

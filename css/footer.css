@@ -14,18 +14,20 @@
 }
 
 .footer {
-    background: linear-gradient(to bottom, var(--red-light), var(--red-bg), var(--red-dark));
     text-decoration: none;
     text-align: center;
     padding: 20px 10px;
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
     color: var(--text-dark);
+    background: linear-gradient(to bottom, var(--red-light), var(--red-bg), var(--red-dark));
 }
 
-a{
+span{
     font-size: 18px;
     color: var(--active);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .fa-heart:hover {

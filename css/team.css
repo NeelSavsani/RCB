@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --bg-dark: #07080A;
+    --bg2-dark: #1d1f23;
+    --bg-light: #ffffff;
+    --text-dark: #ffffff;
+    --text-light: #000000;
+    --active: #be9440;
+    --actived: #159946;
+    --hover-bg: #222;
+    --group2-hover-bg: #222;
+    --red-bg: #ca0d13;
+    --red-dark: #aa0f10;
+    --red-light: #d60c14;
+    --pink-bg: #F8E5E3;
+    --disc-color: #647499;
+}
+
+main {
+    padding-top: 100px;
+    color: black;
+}
+
+.heading-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 60px;
+    font-family: "Ubuntu", sans-serif;
+    color: var(--red-light);
+    text-transform: capitalize;
+}
+
+.desc-champions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--disc-color);
+    font-size: 19px;
+}

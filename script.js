@@ -30,11 +30,11 @@ document.addEventListener('click', function (event) {
 });
 
 function knowChampions() {
-    window.open('#', '_blank');
+    window.location.href = "team.html";
 }
 
 function reliveVictory() {
-    window.open('', '_blank');
+    window.location.href = "";
 }
 
 function visitPortfolio(){

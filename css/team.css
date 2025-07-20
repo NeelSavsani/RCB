@@ -1,46 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-:root {
-    --bg-dark: #07080A;
-    --bg2-dark: #1d1f23;
-    --bg-light: #ffffff;
-    --text-dark: #ffffff;
-    --text-light: #000000;
-    --active: #be9440;
-    --actived: #159946;
-    --hover-bg: #222;
-    --group2-hover-bg: #222;
-    --red-bg: #ca0d13;
-    --red-dark: #aa0f10;
-    --red-light: #d60c14;
-    --pink-bg: #F8E5E3;
-    --disc-color: #647499;
+.champion-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 60px auto;
+  padding: 0 20px;
+  max-width: 1200px;
 }
 
-main {
-    padding-top: 100px;
-    color: black;
+.champion-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
-.heading-main {
-    display: flex;
+.champion-card {
+  background-color: var(--bg-light);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.champion-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.champion-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Card content layout */
+.champion-content {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Name */
+.champion-content h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 6px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Plane icon for foreign players */
+.champion-content h3 i.fa-plane-up, .champion-content h3 i.fa-c {
+  font-size: 0.85rem;
+  color: var(--red-light);
+}
+
+/* Role text */
+.champion-content .role {
+  font-size: 0.95rem;
+  color: var(--red-light);
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+/* Description */
+.champion-content p {
+  color: var(--disc-color);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: left;
+  flex-grow: 1;
+}
+
+/* Learn more link */
+.learn-more {
+  margin-top: auto;
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--active);
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: mobile/tablet */
+@media (max-width: 768px) {
+  .champion-row {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 60px;
-    font-family: "Ubuntu", sans-serif;
-    color: var(--red-light);
-    text-transform: capitalize;
-}
+  }
 
-.desc-champions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px 0;
-    font-family: 'Poppins', sans-serif;
-    color: var(--disc-color);
-    font-size: 19px;
+  .champion-card {
+    width: 90%;
+    max-width: 350px;
+  }
 }

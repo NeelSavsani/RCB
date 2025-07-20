@@ -19,7 +19,8 @@
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  width: 300px;
+  width: 360px;
+  /* Increased width from 300px to 360px */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -59,7 +60,8 @@
 }
 
 /* Plane icon for foreign players */
-.champion-content h3 i.fa-plane-up, .champion-content h3 i.fa-c {
+.champion-content h3 i.fa-plane-up,
+.champion-content h3 i.fa-c {
   font-size: 0.85rem;
   color: var(--red-light);
 }
@@ -106,7 +108,11 @@
   }
 
   .champion-card {
-    width: 90%;
-    max-width: 350px;
+    width: 95%;
+    max-width: 380px;
+  }
+
+  .champion-card img {
+    height: 200px;
   }
 }

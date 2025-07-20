@@ -49,7 +49,7 @@
 /* Name */
 .champion-content h3 {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #000;
   margin-bottom: 6px;
   text-align: left;
@@ -66,7 +66,7 @@
 
 /* Role text */
 .champion-content .role {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--red-light);
   font-weight: 600;
   margin-bottom: 12px;
@@ -77,6 +77,7 @@
 .champion-content p {
   color: var(--disc-color);
   font-size: 0.9rem;
+  margin-top: 5px;
   line-height: 1.4;
   text-align: left;
   flex-grow: 1;

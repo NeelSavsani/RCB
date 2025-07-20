@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --bg-dark: #07080A;
+    --bg2-dark: #1d1f23;
+    --bg-light: #ffffff;
+    --text-dark: #ffffff;
+    --text-light: #000000;
+    --active: #be9440;
+    --actived: #159946;
+    --hover-bg: #222;
+    --group2-hover-bg: #222;
+    --red-bg: #ca0d13;
+    --red-dark: #aa0f10;
+    --red-light: #d60c14;
+    --pink-bg: #F8E5E3;
+    --disc-color: #647499;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 150px;
+}
+
+.cntr {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    border-radius: 12px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trophy-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 1.6rem;
+    color: #d81342;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.quote-box {
+    background-color: #fff8f8;
+    border-left: 4px solid #d81342;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.quote-box blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.quote-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+hr.dash {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+.section p i.tilt{
+    display: inline-block;
+    text-decoration: italic;
+    transform: skew(-7deg);
+}
+
+.section h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.section h4{
+    font-size: 1.2rem;
+    margin: 20px auto;
+    color: var(--red-bg);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-position: inside;
+    font-family: "Roboto";
+}
+
+.section .tags{
+    color: var(--disc-color);
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 820px) {
+  .cntr {
+    margin: 0 46px; 
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-top: 130px;
+  }
+
+  .cntr {
+    margin: 0 34px;
+    padding: 20px;
+  }
+}

@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --bg-dark: #07080A;
+  --bg2-dark: #1d1f23;
+  --bg-light: #ffffff;
+  --text-dark: #ffffff;
+  --text-light: #000000;
+  --active: #be9440;
+  --actived: #159946;
+  --hover-bg: #222;
+  --group2-hover-bg: #222;
+  --red-bg: #ca0d13;
+  --red-dark: #aa0f10;
+  --red-light: #d60c14;
+  --pink-bg: #F8E5E3;
+  --disc-color: #647499;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 100px;
+}
+
 .champion-grid {
   display: flex;
   flex-direction: column;
@@ -20,7 +45,6 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   width: 360px;
-  /* Increased width from 300px to 360px */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -107,6 +131,10 @@
     align-items: center;
   }
 
+  main {
+    padding-top: 120px;
+  }
+
   .champion-card {
     width: 95%;
     max-width: 380px;
@@ -114,5 +142,11 @@
 
   .champion-card img {
     height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-top: 130px;
   }
 }

@@ -34,7 +34,7 @@ function knowChampions() {
 }
 
 function reliveVictory() {
-    window.location.href = "";
+    window.location.href = "ipl.html";
 }
 
 function visitPortfolio(){
